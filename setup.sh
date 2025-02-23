@@ -2,11 +2,7 @@
 
 # Update and upgrade system
 echo "Updating system..."
-sudo apt update && sudo apt upgrade -y
-
-# Install essential tools
-echo "Installing essential tools..."
-sudo apt install -y git curl wget unzip zip tmux htop tree fzf ripgrep bat exa neovim zsh
+sudo apt update -y
 
 # Install Oh My Zsh if not installed
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
